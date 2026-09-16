@@ -1,0 +1,117 @@
+{
+  "sourceExport": "fedops-gateway-runtime",
+  "basis": "Sanitized handoff plus 67-file configuration manifest; new history, not an upstream fork or full export.",
+  "files": [
+    {
+      "path": "README.md",
+      "sourceSha256": "4a38b0a2c7efee2c8190cc3da62aecf574343d1a0277d75f0089e792ccb8778b",
+      "repositorySha256": "4a38b0a2c7efee2c8190cc3da62aecf574343d1a0277d75f0089e792ccb8778b"
+    },
+    {
+      "path": "build.gradle",
+      "sourceSha256": "4e8ba43fc20e0e240d064d4dd281dbd4b419fd38c2404875ab976b5852633cdd",
+      "repositorySha256": "4e8ba43fc20e0e240d064d4dd281dbd4b419fd38c2404875ab976b5852633cdd"
+    },
+    {
+      "path": "fedops_gateway.py",
+      "sourceSha256": "26b055d7f011858a4d449e89002e8993ce98f7215a4b7a9345b7c6fa617fa6f3",
+      "repositorySha256": "26b055d7f011858a4d449e89002e8993ce98f7215a4b7a9345b7c6fa617fa6f3"
+    },
+    {
+      "path": "req.txt",
+      "sourceSha256": "703a5538a866440bd1aa77edabb20d92311d853030a01fe2aca93e1aee7adea4",
+      "repositorySha256": "703a5538a866440bd1aa77edabb20d92311d853030a01fe2aca93e1aee7adea4"
+    },
+    {
+      "path": "settings.gradle",
+      "sourceSha256": "9a60695567408df182688ffffd97e7b0f49e9eff3bd23cfcac7c9f7a296510d3",
+      "repositorySha256": "9a60695567408df182688ffffd97e7b0f49e9eff3bd23cfcac7c9f7a296510d3"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/MailAuthApplication.java",
+      "sourceSha256": "15aaf8d5a65328bbedf184d973e8b2bfd4adedb0a512fef6a571b9d8e8d613d6",
+      "repositorySha256": "15aaf8d5a65328bbedf184d973e8b2bfd4adedb0a512fef6a571b9d8e8d613d6"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/config/EmailConfig.java",
+      "sourceSha256": "c693a5e19c789ad4dfbc4e35d8ea11095c1dcbf12fe450c203d5699e4836ac65",
+      "repositorySha256": "c693a5e19c789ad4dfbc4e35d8ea11095c1dcbf12fe450c203d5699e4836ac65"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/config/RedisConfig.java",
+      "sourceSha256": "fe6176613981d2e6430d007d8dbf5fc45526de52e9181d7b73dea6856e2cb93a",
+      "repositorySha256": "fe6176613981d2e6430d007d8dbf5fc45526de52e9181d7b73dea6856e2cb93a"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/controller/MemberController.java",
+      "sourceSha256": "e47de8b498d389236a9f7a840b514e068b69acb417ecfb958c2eb682747b9def",
+      "repositorySha256": "e47de8b498d389236a9f7a840b514e068b69acb417ecfb958c2eb682747b9def"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/domain/Member.java",
+      "sourceSha256": "4b07947222d0454dc9479bd5cdb3d4b1a9cfba7226ab08682c499401a19e210c",
+      "repositorySha256": "4b07947222d0454dc9479bd5cdb3d4b1a9cfba7226ab08682c499401a19e210c"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/dto/EmailVerificationResult.java",
+      "sourceSha256": "47d1ec16e8a7776af418d710f46b1c2797d3b46339855df96ebebe411f00bc51",
+      "repositorySha256": "47d1ec16e8a7776af418d710f46b1c2797d3b46339855df96ebebe411f00bc51"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/dto/SingleResponseDto.java",
+      "sourceSha256": "668e4c683a4466b73f227bb19327ad7ada8c2e212b2bcb62ce83067906f9a1a0",
+      "repositorySha256": "668e4c683a4466b73f227bb19327ad7ada8c2e212b2bcb62ce83067906f9a1a0"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/exception/BusinessLogicException.java",
+      "sourceSha256": "da295a021ef6219eb46524d1fdd5263438b7df3c91f1f0362a6f83e77150bcce",
+      "repositorySha256": "da295a021ef6219eb46524d1fdd5263438b7df3c91f1f0362a6f83e77150bcce"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/exception/ExceptionCode.java",
+      "sourceSha256": "106cc41d09a858d8da51095d6214c69501aa6159ec936e11b5e4967b9dcd6e74",
+      "repositorySha256": "106cc41d09a858d8da51095d6214c69501aa6159ec936e11b5e4967b9dcd6e74"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/repository/MemberRepository.java",
+      "sourceSha256": "45789836e36b5e0fad6af224944233f52b2c1795cad0143dff77266bfc6cfd65",
+      "repositorySha256": "45789836e36b5e0fad6af224944233f52b2c1795cad0143dff77266bfc6cfd65"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/service/MailService.java",
+      "sourceSha256": "fea63a9e582543c17a6a9925cd68aa7ce472e1107d93852371f2292f48a3139c",
+      "repositorySha256": "fea63a9e582543c17a6a9925cd68aa7ce472e1107d93852371f2292f48a3139c"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/service/MemberService.java",
+      "sourceSha256": "783925930237895bce1c2a14c1a3d4675c8f93f6b266fc4b6b81a2ef1ac67ecf",
+      "repositorySha256": "783925930237895bce1c2a14c1a3d4675c8f93f6b266fc4b6b81a2ef1ac67ecf"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/service/RedisService.java",
+      "sourceSha256": "7fae7b316a2b2be3ac3503535ad2d18459902857bc53b7ad3dbc514fb269c49e",
+      "repositorySha256": "7fae7b316a2b2be3ac3503535ad2d18459902857bc53b7ad3dbc514fb269c49e"
+    },
+    {
+      "path": "src/main/java/com/example/mailauth/validation/CustomEmail.java",
+      "sourceSha256": "f53b997de15074dded4d029a4b4cba6bbcd21e347a10e8370f0357917fe62ead",
+      "repositorySha256": "f53b997de15074dded4d029a4b4cba6bbcd21e347a10e8370f0357917fe62ead"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "sourceSha256": "9c525648f48ce91ccccefa1614b898bb6418ee596d799675d2e308cac335e4be",
+      "repositorySha256": "9c525648f48ce91ccccefa1614b898bb6418ee596d799675d2e308cac335e4be"
+    },
+    {
+      "path": ".env.example",
+      "sourceSha256": "b5036f23a44ef036c051ca8bd295050ece7db926645a7872a54b43040012dd1b",
+      "repositorySha256": "b5036f23a44ef036c051ca8bd295050ece7db926645a7872a54b43040012dd1b"
+    },
+    {
+      "path": ".gitignore",
+      "sourceSha256": "47a36cf3b7314c9d6886d03c976cf63954b100cd5c651c4fc4b3cf89d9bb10e3",
+      "repositorySha256": "3656f615fa23862efc72137ab5bab1271f28b03d13bfc0b3fa0ab9b0e858fdb5"
+    }
+  ],
+  "omitted": []
+}
