@@ -32,6 +32,9 @@ public class EmailConfig {
     @Value("${spring.mail.properties.mail.smtp.starttls.required}")
     private boolean starttlsRequired;
 
+    @Value("${spring.mail.properties.mail.smtp.ssl.enable}")
+    private boolean ssl;
+
     @Value("${spring.mail.properties.mail.smtp.connectiontimeout}")
     private int connectionTimeout;
 
@@ -43,6 +46,9 @@ public class EmailConfig {
 
     @Bean
     public JavaMailSender javaMailSender() {
+        if ((ssl && (starttlsEnable || starttlsRequired)) || (starttlsRequired && !starttlsEnable)) {
+            throw new IllegalArgumentException("Use either implicit TLS or STARTTLS; required STARTTLS must be enabled");
+        }
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost(host);
         mailSender.setPort(port);
@@ -59,6 +65,8 @@ public class EmailConfig {
         properties.put("mail.smtp.auth", auth);
         properties.put("mail.smtp.starttls.enable", starttlsEnable);
         properties.put("mail.smtp.starttls.required", starttlsRequired);
+        properties.put("mail.smtp.ssl.enable", ssl);
+        properties.put("mail.smtp.ssl.checkserveridentity", true);
         properties.put("mail.smtp.connectiontimeout", connectionTimeout);
         properties.put("mail.smtp.timeout", timeout);
         properties.put("mail.smtp.writetimeout", writeTimeout);

@@ -8,6 +8,8 @@ spring:
       mail:
         smtp:
           auth: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH:true}
+          ssl:
+            enable: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_SSL_ENABLE:false}
           starttls:
             enable: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE:true}
             required: ${SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_REQUIRED:true}
@@ -38,3 +40,8 @@ spring:
     redis:
       host: ${SPRING_DATA_REDIS_HOST:localhost}
       port: ${SPRING_DATA_REDIS_PORT:6379}
+
+fedops:
+  mail:
+    from-address: ${FEDOPS_MAIL_FROM_ADDRESS:${SPRING_MAIL_USERNAME:}}
+    from-name: ${FEDOPS_MAIL_FROM_NAME:FedOps}

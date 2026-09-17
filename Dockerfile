@@ -3,7 +3,7 @@ ARG BASE_IMAGE=docker.io/library/eclipse-temurin@sha256:ec72ba5962b45ae4e7f96bfb
 FROM ${BUILD_IMAGE} AS builder
 WORKDIR /build
 COPY . .
-RUN gradle --no-daemon bootJar
+RUN gradle --no-daemon test bootJar
 FROM ${BASE_IMAGE}
 WORKDIR /app
 COPY --from=builder /build/build/libs/fedops-mail-auth-0.0.1-SNAPSHOT.jar /app/fedops-mail-auth.jar
